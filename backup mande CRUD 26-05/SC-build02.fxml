@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="1213.0" style="-fx-background-color: #26C0CD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="111.0" prefWidth="1216.0" style="-fx-background-color: #F2BC52;">
+         <children>
+            <TextField layoutX="770.0" layoutY="40.0" prefHeight="31.0" prefWidth="289.0" />
+            <Label layoutX="137.0" layoutY="29.0" prefHeight="55.0" prefWidth="289.0" text="ANNUAIRE ELECTRONIQUE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon iconName="BOOK" layoutX="70.0" layoutY="74.0" size="50" wrappingWidth="66.99999764561653" />
+            <Button alignment="CENTER_RIGHT" layoutX="1070.0" layoutY="38.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" text="Rechercher">
+               <graphic>
+                  <FontAwesomeIcon iconName="SEARCH" size="25" />
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <ColorAdjust>
+               <input>
+                  <ColorAdjust />
+               </input>
+            </ColorAdjust>
+         </effect>
+      </AnchorPane>
+      <TableView layoutX="440.0" layoutY="122.0" prefHeight="389.0" prefWidth="766.0">
+        <columns>
+          <TableColumn prefWidth="51.0" text="Id" />
+          <TableColumn prefWidth="82.0" text="Nom" />
+            <TableColumn prefWidth="159.0" text="Prenom" />
+            <TableColumn prefWidth="56.0" text="Genre" />
+            <TableColumn prefWidth="109.0" text="Date d'entrée" />
+            <TableColumn prefWidth="122.0" text="Géolocalisation" />
+            <TableColumn prefWidth="88.0" text="Formation" />
+            <TableColumn prefWidth="96.0" text="Secteur" />
+        </columns>
+      </TableView>
+      <VBox alignment="TOP_RIGHT" layoutX="36.0" layoutY="174.0" prefHeight="317.0" prefWidth="109.0" spacing="15.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="160.0" text="Nom" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="156.0" text="Prenom" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="31.0" prefWidth="156.0" text="Genre " />
+            <Label layoutX="10.0" layoutY="41.0" prefHeight="31.0" prefWidth="158.0" text="Date d'entrée" />
+            <Label layoutX="10.0" layoutY="72.0" prefHeight="31.0" prefWidth="157.0" text="Géolocalisation" />
+            <Label layoutX="10.0" layoutY="103.0" prefHeight="31.0" prefWidth="158.0" text="Formation" />
+            <Label layoutX="10.0" layoutY="134.0" prefHeight="31.0" prefWidth="159.0" text="Secteur" />
+         </children>
+      </VBox>
+      <VBox layoutX="209.0" layoutY="174.0" prefHeight="325.0" prefWidth="198.0" spacing="15.0">
+         <children>
+            <TextField />
+            <TextField layoutX="10.0" layoutY="10.0" />
+            <ComboBox prefHeight="31.0" prefWidth="198.0" />
+            <TextField layoutX="10.0" layoutY="10.0" />
+            <TextField layoutX="10.0" layoutY="41.0" />
+            <TextField layoutX="10.0" layoutY="72.0" />
+            <TextField layoutX="10.0" layoutY="103.0" />
+         </children>
+      </VBox>
+      <Separator layoutX="429.0" orientation="VERTICAL" prefHeight="595.0" prefWidth="0.0" />
+      <Separator layoutX="429.0" layoutY="104.0" prefHeight="14.0" prefWidth="778.0" />
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="502.0" prefHeight="100.0" prefWidth="393.0" spacing="50.0">
+         <children>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="40.0" prefWidth="101.0" text="Ajouter">
+               <graphic>
+                  <FontAwesomeIcon fontSmoothingType="LCD" iconName="PLUS" lineSpacing="5.0" size="25" wrappingWidth="23.64285659790039" />
+               </graphic>
+            </Button>
+            <Button alignment="CENTER_RIGHT" lineSpacing="50.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="117.0" text="Annuler ">
+               <graphic>
+                  <FontAwesomeIcon iconName="REMOVE" size="30" wrappingWidth="30.571428298950195" />
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="706.0" layoutY="502.0" prefHeight="100.0" prefWidth="488.0" spacing="50.0">
+         <children>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="35.0" prefWidth="163.0" text="Supprimer">
+               <graphic>
+                  <FontAwesomeIcon iconName="TRASH" size="25" wrappingWidth="21.64285659790039" />
+               </graphic>
+            </Button>
+            <Button alignment="CENTER_RIGHT" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" text="Modifier">
+               <graphic>
+                  <FontAwesomeIcon iconName="EDIT" size="25" wrappingWidth="28.0" />
+               </graphic>
+            </Button>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <Label text="Total" />
+                  <TextField prefHeight="31.0" prefWidth="71.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="145.0" layoutY="178.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="317.0" prefWidth="59.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="74.0" prefWidth="11.0" spacing="17.5">
+               <children>
+                  <FontAwesomeIcon iconName="USER" size="25" />
+                  <FontAwesomeIcon iconName="USER" size="25" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="59.0">
+               <children>
+                  <FontAwesomeIcon iconName="VENUS" size="19" strikethrough="true" stroke="BLACK" />
+                  <FontAwesomeIcon iconName="MARS" size="19" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="87.0" prefWidth="59.0" spacing="20.0">
+               <children>
+                  <FontAwesomeIcon iconName="CALENDAR" size="22.5" wrappingWidth="20.89285659790039" />
+                  <FontAwesomeIcon iconName="COMPASS" size="22.5" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="96.0" prefWidth="59.0" spacing="25.0">
+               <children>
+                  <FontAwesomeIcon iconName="GRADUATIONCAP" size="20" />
+                  <FontAwesomeIcon iconName="BANK" lineSpacing="20.0" size="22.5" />
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1230.0" style="-fx-background-color: #f2bc52;;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.annuaireelectronique.AnnuairFXMLController">
+    <children>
+        <AnchorPane id="TOPAN" layoutX="-3.0" prefHeight="111.0" prefWidth="1237.0" stylesheets="@../../../Annuaire.css">
+            <children>
+                <TextField fx:id="tf_rechercher" layoutX="770.0" layoutY="40.0" prefHeight="31.0" prefWidth="289.0" />
+                <Label layoutX="137.0" layoutY="29.0" prefHeight="55.0" prefWidth="289.0" text="ANNUAIRE ELECTRONIQUE" textFill="WHITE">
+                    <font>
+                        <Font name="Tahoma" size="19.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIcon iconName="BOOK" layoutX="70.0" layoutY="74.0" size="50" wrappingWidth="66.99999764561653" />
+                <Button fx:id="bt_rechercher" alignment="CENTER_RIGHT" layoutX="1070.0" layoutY="38.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="131.0" stylesheets="@../../../Annuaire.css" text="Rechercher">
+                    <graphic>
+                        <FontAwesomeIcon iconName="SEARCH" size="25" />
+                    </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+                </Button>
+            </children>
+            <effect>
+                <ColorAdjust>
+                    <input>
+                        <ColorAdjust />
+                    </input>
+                </ColorAdjust>
+            </effect>
+        </AnchorPane>
+        <Separator layoutX="420.0" layoutY="110.0" orientation="VERTICAL" prefHeight="510.0" prefWidth="11.0" />
+        <HBox alignment="CENTER" layoutX="14.0" layoutY="505.0" prefHeight="100.0" prefWidth="393.0" spacing="50.0">
+            <children>
+                <Button fx:id="bt_ajouter" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#ajouterAction" prefHeight="40.0" prefWidth="101.0" text="Ajouter">
+                    <graphic>
+                        <FontAwesomeIcon fontSmoothingType="LCD" iconName="PLUS" lineSpacing="5.0" size="25" wrappingWidth="23.64285659790039" />
+                    </graphic>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <stylesheets>
+                  <URL value="@../../../styles/Annuaire.css" />
+                  <URL value="@../../../Annuaire.css" />
+               </stylesheets>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+                </Button>
+                <Button fx:id="bt_annuler" alignment="CENTER_RIGHT" lineSpacing="50.0" mnemonicParsing="false" onAction="#annulerAction" prefHeight="13.0" prefWidth="117.0" stylesheets="@../../../Annuaire.css" text="Annuler ">
+                    <graphic>
+                        <FontAwesomeIcon iconName="REMOVE" size="30" wrappingWidth="30.571428298950195" />
+                    </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+                </Button>
+            </children>
+        </HBox>
+        <VBox alignment="TOP_CENTER" layoutX="145.0" layoutY="178.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="317.0" prefWidth="59.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="74.0" prefWidth="11.0" spacing="17.5" />
+                <VBox alignment="CENTER" prefHeight="87.0" prefWidth="59.0" spacing="20.0" />
+            </children>
+        </VBox>
+      <VBox layoutX="35.0" layoutY="132.0" prefHeight="339.0" prefWidth="365.0" spacing="20.0" stylesheets="@../../../Annuaire.css">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label prefHeight="50.0" prefWidth="200.0" text="Nom">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                        <FontAwesomeIcon iconName="USER" size="30" text="" translateX="16.0" />
+                      <TextField fx:id="tf_nom" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label prefHeight="31.0" prefWidth="156.0" stylesheets="@../../../Annuaire.css" text="Prénom">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                        <FontAwesomeIcon iconName="USER" size="30" translateX="16.0" />
+                      <TextField fx:id="tf_prenom" alignment="BOTTOM_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="7.0">
+               <children>
+                      <Label lineSpacing="20.0" prefHeight="31.0" prefWidth="156.0" text="Genre ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                        <FontAwesomeIcon iconName="VENUS" size="25" strikethrough="true" stroke="BLACK" translateX="10.0" />
+                        <FontAwesomeIcon iconName="MARS" size="25" translateX="5.0" />
+                      <ComboBox fx:id="combo_genre" editable="true" onAction="#combogenreAction" prefHeight="30.0" prefWidth="157.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label prefHeight="30.0" prefWidth="165.0" text="Date d'entrée">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                        <FontAwesomeIcon iconName="CALENDAR" size="30" translateX="10.0" wrappingWidth="20.89285659790039" />
+                      <TextField fx:id="tf_date" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label prefHeight="31.0" prefWidth="165.0" text="Géolocalisation">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                        <FontAwesomeIcon iconName="COMPASS" size="30" translateX="16.0" />
+                      <TextField fx:id="tf_localisation" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label fx:id="label" prefHeight="31.0" prefWidth="158.0" text="Formation">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon iconName="BRIEFCASE" size="30" translateX="16.0" />
+                      <TextField fx:id="tf_formation" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="30.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                      <Label prefHeight="31.0" prefWidth="159.0" text="Secteur">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon iconName="BANK" lineSpacing="20.0" size="30" translateX="18.0" />
+                  <ComboBox fx:id="combo_secteur" editable="true" onAction="#combosecteurAction" prefHeight="31.0" prefWidth="164.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <AnchorPane id="RIGHTPAN" layoutX="426.0" layoutY="111.0" prefHeight="510.0" prefWidth="805.0" stylesheets="@../../../Annuaire.css">
+         <children>
+              <TableView fx:id="tableview" editable="true" layoutX="20.0" layoutY="14.0" onMouseClicked="#selectedItem" prefHeight="389.0" prefWidth="766.0">
+                  <columns>
+                      <TableColumn fx:id="col_id" prefWidth="51.0" text="Id" />
+                      <TableColumn fx:id="col_nom" prefWidth="106.0" text="Nom" />
+                      <TableColumn fx:id="col_prenom" prefWidth="112.0" text="Prénom" />
+                      <TableColumn fx:id="col_genre" prefWidth="79.0" text="Genre" />
+                      <TableColumn fx:id="col_date" prefWidth="109.0" text="Date d'entrée" />
+                      <TableColumn fx:id="col_localisation" prefWidth="122.0" text="Géolocalisation" />
+                      <TableColumn fx:id="col_formation" prefWidth="88.0" text="Formation" />
+                      <TableColumn fx:id="col_secteur" prefWidth="96.0" text="Secteur" />
+                  </columns>
+              </TableView>
+              <HBox alignment="CENTER" layoutX="287.0" layoutY="403.0" prefHeight="100.0" prefWidth="488.0" spacing="50.0">
+                  <children>
+                      <Button fx:id="bt_supprimer" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#supprimerAction" prefHeight="35.0" prefWidth="184.0" stylesheets="@../../../Annuaire.css" text="Supprimer">
+                          <graphic>
+                              <FontAwesomeIcon iconName="TRASH" size="25" wrappingWidth="21.64285659790039" />
+                          </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                      </Button>
+                      <Button fx:id="bt_modifier" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#modifierAction" prefHeight="35.0" prefWidth="172.0" stylesheets="@../../../Annuaire.css" text="Modifier">
+                          <graphic>
+                              <FontAwesomeIcon iconName="EDIT" size="25" wrappingWidth="28.0" />
+                          </graphic>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                      </Button>
+                      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                          <children>
+                        <FontAwesomeIcon iconName="USERS" size="30" translateX="18.0" />
+                              <TextField fx:id="tf_total" prefHeight="31.0" prefWidth="71.0" />
+                          </children>
+                      </HBox>
+                  </children>
+              </HBox>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

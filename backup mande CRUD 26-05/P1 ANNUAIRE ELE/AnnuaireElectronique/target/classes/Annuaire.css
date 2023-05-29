@@ -1,0 +1,109 @@
+
+
+.mainFxmlClass {
+
+       
+
+    
+}
+#bt_ajouter{  
+     -fx-cursor: hand;
+    cursor: pointer;
+ 
+      -fx-background-color:
+        linear-gradient(#c9bbbb, #ab9797),
+        radial-gradient(center 50% -40%, radius 200%, #c9bbbb 45%, #ab9797 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+  } 
+  
+#bt_ajouter:hover{ 
+-fx-background-color:#a7a7a7
+}
+#bt_annuler{
+     -fx-cursor: hand;
+    -fx-background-color:
+        linear-gradient(#c9bbbb, #ab9797),
+        radial-gradient(center 50% -40%, radius 200%, #c9bbbb 45%, #ab9797 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+} 
+#bt_annuler:hover{ 
+-fx-background-color:#a7a7a7}
+
+
+
+#bt_supprimer{
+     -fx-cursor: hand;
+   -fx-background-color:
+        linear-gradient(#c9bbbb, #ab9797),
+        radial-gradient(center 50% -40%, radius 200%, #c9bbbb 45%, #ab9797 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+    
+} 
+#bt_supprimer:hover{ 
+-fx-background-color:#a7a7a7}
+
+#bt_modifier{
+     -fx-cursor: hand;
+   -fx-background-color:
+        linear-gradient(#c9bbbb, #ab9797),
+        radial-gradient(center 50% -40%, radius 200%, #c9bbbb 45%, #ab9797 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+   }
+   #bt_modifier:hover{ 
+-fx-background-color:#a7a7a7}
+
+#bt_rechercher{
+     -fx-cursor: hand;
+    -fx-background-color:
+        linear-gradient(#26C0CD, #26C0CD),
+        radial-gradient(center 50% -40%, radius 200%, #26C0CD 45%, #26C0CD 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+} 
+#bt_rechercher:hover{ 
+-fx-background-color:#a7a7a7}
+
+#TOPAN{
+  -fx-background-color: 
+        linear-gradient(#182868, #213868),
+        radial-gradient(center 50% -40%, radius 200%, #182868 45%, #213868 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #000000;
+    
+    
+}
+
+#RIGHTPAN{
+    
+   
+    -fx-background-color:  #26C0CD;
+}
+.table-view{
+     -fx-cursor: hand;
+}
+
+
+
+
+
